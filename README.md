@@ -24,7 +24,7 @@ curl -X POST -H 'Content-type: application/json' --data '{"text":"Hello, World!"
 
 You can check the details here:
 https://api.slack.com/docs/messages
-Note: The URL =>  https://hooks.slack.com/services/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 is a real URL, it will post the message you will format to the person who is reviewing the challenge.
+Note: The URL =>  https://hooks.slack.com/services/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 is a real URL, it will post the message you will format to the person who is reviewing the challenge.
 
 
 ## About the stock
