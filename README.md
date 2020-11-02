@@ -20,7 +20,7 @@ Each minute 10 new cars are created, every day the robot builder process start o
 -  This robot will be looking for any kind of defect, it will send an alert when the defect is detected and it will inform the details using slack.
 Here you go, a curl example (of course you’ll do this using Ruby rather than CURL)
 
-curl -X POST -H 'Content-type: application/json' --data '{"text":"Hello, World!"}' https://hooks.slack.com/services/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`
+curl -X POST -H 'Content-type: application/json' --data '{"text":"Hello, World!"}' https://hooks.slack.com/services/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
 
 You can check the details here:
 https://api.slack.com/docs/messages
