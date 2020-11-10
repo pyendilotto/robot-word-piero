@@ -1,0 +1,2 @@
+class Deffects < ApplicationRecord
+end

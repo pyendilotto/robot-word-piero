@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2020_11_09_200207) do
+ActiveRecord::Schema.define(version: 2020_11_10_123553) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -24,6 +24,12 @@ ActiveRecord::Schema.define(version: 2020_11_09_200207) do
     t.string "state", limit: 15
     t.string "location", limit: 10
     t.string "defect", limit: 15
+  end
+
+  create_table "deffects", force: :cascade do |t|
+    t.integer "id_car"
+    t.datetime "created_at", precision: 6, null: false
+    t.datetime "updated_at", precision: 6, null: false
   end
 
 end
