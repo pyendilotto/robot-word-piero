@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2020_11_10_123553) do
+ActiveRecord::Schema.define(version: 2020_11_10_150648) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -26,10 +26,23 @@ ActiveRecord::Schema.define(version: 2020_11_10_123553) do
     t.string "defect", limit: 15
   end
 
+  create_table "changes", id: :serial, force: :cascade do |t|
+    t.integer "id_order"
+  end
+
   create_table "deffects", force: :cascade do |t|
     t.integer "id_car"
-    t.datetime "created_at", precision: 6, null: false
-    t.datetime "updated_at", precision: 6, null: false
+  end
+
+  create_table "missings", id: :serial, force: :cascade do |t|
+    t.string "model", limit: 1
+  end
+
+  create_table "orders", id: :serial, force: :cascade do |t|
+    t.integer "id_car"
+    t.float "total"
+    t.datetime "date"
+    t.float "quantity"
   end
 
 end

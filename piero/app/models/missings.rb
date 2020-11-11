@@ -1,0 +1,2 @@
+class Missings < ApplicationRecord
+end

@@ -1,0 +1,27 @@
+<h1>Report</h1>
+
+<h2>*Total of cars sold: <%= @cantsold %></h2>
+
+</br>
+
+<h2>*Total of daily income: </h2>
+<div>
+<% @sum.each do |sum| %>
+    <h2>
+      <h2><%= sum %></h2>
+    </h2>
+  <% end %>
+</div>
+
+</br>
+
+<h2>*Average by daily income: </h2>
+<div>
+<% @avg.each do |avg| %>
+    <h2>
+      <h2><%= avg %></h2>
+    </h2>
+  <% end %>
+</div>
+
+</br>

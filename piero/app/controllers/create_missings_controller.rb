@@ -1,0 +1,2 @@
+class CreateMissingsController < ApplicationController
+end

@@ -1,0 +1,2 @@
+module GenerateChangesHelper
+end

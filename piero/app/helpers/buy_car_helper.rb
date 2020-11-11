@@ -1,0 +1,2 @@
+module BuyCarHelper
+end
